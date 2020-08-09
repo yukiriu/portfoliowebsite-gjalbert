@@ -1,17 +1,54 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Gabriel Jalbert</title>
-  <meta name="description" content="Portfolio website for Gabriel Jalbert">
-  <meta name="author" content="Gabriel Jalbert">
+    <title>Gabriel Jalbert</title>
+    <meta name="description" content="Portfolio website for Gabriel Jalbert">
+    <meta name="author" content="Gabriel Jalbert">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 </head>
 
-<body style="background-image: linear-gradient(to bottom, #5a9367, #649a70, #6da279, #77a983, #81b18c);">
+<body style="margin: 0;"">
+
+    <div class='spinner-wrapper'>
+        <div class=" spinner">
+    </div>
+    </div>
+    <div>
+        <div class="landing-page container">
+
+            <div class="title">
+                <section>
+                    <div style="border: #f3f7f4; border-style: solid; border-width: 0px 0px 5px 0px;">GABRIEL</div>
+                    <div>JALBERT</div>
+                    <span class="coming-soon">coming soon...</span>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        let spinnerWrapper = document.querySelector('.spinner-wrapper');
+        let mainContent = document.querySelector('.main-content');
+        window.addEventListener('load', function () {
+            // spinnerWrapper.style.display = 'none';
+            spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+            document.body.appendChild(mainContent);
+        });
+    </script>
 </body>
+
 </html>
