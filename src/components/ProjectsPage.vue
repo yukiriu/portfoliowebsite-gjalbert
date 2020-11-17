@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      projects: [{ name: "Yukolors", desc: "Simple coolors clone", technologies: "Vue.js, Laravel, TailwindCSS", gitHubLink: "https://github.com/yukiriu/yukolors",  }],
+      projects: [{ name: "Yukolors", desc: "Simple coolors clone", technologies: "Vue.js, Laravel, TailwindCSS, test", gitHubLink: "https://github.com/yukiriu/yukolors",  }],
     };
   },
 };
