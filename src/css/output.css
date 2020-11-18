@@ -22429,6 +22429,26 @@ video {
   }
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .animate-none {
   -webkit-animation: none;
           animation: none;
@@ -22452,6 +22472,11 @@ video {
 .animate-bounce {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.animate-fadeIn {
+  -webkit-animation: fadeIn 2s ease-in forwards;
+          animation: fadeIn 2s ease-in forwards;
 }
 
 @media (min-width: 640px) {
@@ -44255,6 +44280,11 @@ video {
   .sm\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .sm\:animate-fadeIn {
+    -webkit-animation: fadeIn 2s ease-in forwards;
+            animation: fadeIn 2s ease-in forwards;
   }
 }
 
@@ -66060,6 +66090,11 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .md\:animate-fadeIn {
+    -webkit-animation: fadeIn 2s ease-in forwards;
+            animation: fadeIn 2s ease-in forwards;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -87864,6 +87899,11 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .lg\:animate-fadeIn {
+    -webkit-animation: fadeIn 2s ease-in forwards;
+            animation: fadeIn 2s ease-in forwards;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -109667,5 +109707,10 @@ video {
   .xl\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .xl\:animate-fadeIn {
+    -webkit-animation: fadeIn 2s ease-in forwards;
+            animation: fadeIn 2s ease-in forwards;
   }
 }

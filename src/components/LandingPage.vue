@@ -2,7 +2,7 @@
   <div
     class="h-screen bg-gradient-to-b from-green-600 to-green-800 text-orange-100 workSans font-semibold text-6xl flex flex-col text-center items-center"
   >
-    <div class="w-auto m-auto">
+    <div class="w-auto m-auto animate-fadeIn">
       <div class="-mb-3">GABRIEL</div>
       <div class="bg-orange-100 h-1"></div>
       <div class="-mt-3">JALBERT</div>

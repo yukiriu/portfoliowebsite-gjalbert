@@ -17,4 +17,5 @@ export default {
 
 <style>
   @import "./css/output.css";
+  @import "./css/fontImport.css";
 </style>

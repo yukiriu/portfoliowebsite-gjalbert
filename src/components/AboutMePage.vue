@@ -2,6 +2,7 @@
   <div
     id="aboutMePage"
     class="h-screen bg-gray-200 flex flex-col items-center justify-center m-auto overflow-hidden"
+    style="scroll-snap-align: start;"
   >
     <div class="flex flex-row justify-around items-center w-3/5">
       <div
