@@ -147,7 +147,7 @@
         innovantes et robustes. Je suis curieux dans la vie de tous les jours et
         j'aime encore plus apprendre tout à propos des nouvelles technologies et
         langages de programmation. Je suis à l’aise avec les technologies PHP,
-        HTML, CSS. JavaScript, Vue.js, node.js, SQL, C# la programmation
+        HTML, CSS. JavaScript, Vue.js, node.js, SQL, C#, la programmation
         orientée objet ainsi que les approches de développement Agile et SCRUM.
         De plus, je suis parfaitement bilingue, à l’écrit et au parler. Je suis
         actuellement à la recherche d'un stage pour l'hiver 2020. Je grandis en
