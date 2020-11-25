@@ -22,6 +22,9 @@ module.exports = {
         '96': '24rem',
         '128': '32rem'
       },
+      screens: {
+        "2xl": '1900px'
+      },
       animation: {
         fadeIn: "fadeIn 2s ease-in forwards"
       },

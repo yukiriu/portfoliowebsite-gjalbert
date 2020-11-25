@@ -1,0 +1,26 @@
+.scrollContainer {
+    scroll-snap-type: y  mandatory;
+}
+
+.page {
+    scroll-snap-align: start;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3b3b3b;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(107, 107, 107);
+    border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -18,4 +18,5 @@ export default {
 <style>
   @import "./css/output.css";
   @import "./css/fontImport.css";
+  @import "./css/extraStyles.css";
 </style>

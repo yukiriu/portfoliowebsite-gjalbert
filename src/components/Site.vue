@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="scrollContainer">
     <LandingPage></LandingPage>
     <AboutMePage></AboutMePage>
     <ProjectsPage></ProjectsPage>
@@ -18,5 +18,8 @@ export default {
     AboutMePage,
     ProjectsPage,
   },
+  
 };
+
+
 </script>

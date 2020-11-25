@@ -1,49 +1,77 @@
 <template>
   <div
     id="projectsPage"
-    class="h-screen bg-gradient-to-r from-green-600 to-green-800 flex flex-row justify-evenly items-center"
+    class="page  min-h-screen h-auto bg-gradient-to-r from-green-600 to-green-800 flex flex-col justify-center items-center"
   >
-    <!-- <div class="flex flex-col absolute h-full">
-            <marquee class="roboto text-white text-opacity-50 font-bold overflow-hidden w-full h-1/2"
-                style="font-size: 20rem;"> PROJECTS. PROJECTS. PROJECTS. PROJECTS. PROJECTS. </marquee>
-            <marquee direction="right" hspace="0"class="roboto text-white text-opacity-50 font-bold overflow-hidden w-full h-1/2"
-                style="font-size: 20rem; top: 100;"> PROJECTS. PROJECTS. PROJECTS. PROJECTS. PROJECTS.  </marquee>
-        </div> -->
-      <div v-for="project in projects" :key="project.name" class="">
-        <ProjectV2
+  <div class="text-8xl text-white workSans font-bold text-opacity-75">
+    PROJETS
+  </div>
+    <div class="flex flex-row justify-evenly items-center w-4/5 h-auto flex-wrap m-10">
+      <div v-for="project in projectsFR" :key="project.name" class="">
+        <Project
           :name="project.name"
           :desc="project.desc"
           :technologies="project.technologies"
           :gitHubLink="project.gitHubLink"
-          :image="project.image"
-        ></ProjectV2>
+          :hostedLink="project.hostedLink"
+        ></Project>
       </div>
     </div>
+  </div>
 </template>
 <script>
-import ProjectV2 from "./Project.vue";
+import Project from "./Project.vue";
 
 export default {
   components: {
-    ProjectV2
+    Project,
   },
   data() {
     return {
-      projects: [
+      projectsFR: [
+        {
+          name: "Yukolors",
+          desc: "Recréation du site Coolors pour me familiariser avec Vue.Js et Laravel.",
+          technologies: "HTML, CSS, TailwindCSS, Vue.js, JavaScript, Laravel",
+          gitHubLink: "https://github.com/yukiriu/yukolors"
+        },
+        {
+          name: "Site web personnel",
+          desc: "Site web personnel pour mettre en valeur mes projets et habiletés.",
+          technologies: "HTML, CSS, TailwindCSS Vue.js, JavaScript",
+          gitHubLink: "https://github.com/yukiriu/portfoliowebsite-gjalbert",
+          hostedLink: "https://gjalbert.com",
+        },
+        {
+          name: "Site web pour Decked Out",
+          desc:
+            "Site web pour le jeu Decked Out, mon projet de fin de technique.",
+          technologies: "HTML, CSS, TailwindCSS, JavaScript",
+          gitHubLink: "https://github.com/yukiriu/deckedout-website",
+          hostedLink: "https://flamboyant-poitras-1dab3b.netlify.app/",
+        }
+      ],
+      projectsEN: [
         {
           name: "Yukolors",
           desc: "Coolors clone to familiarize myself with Vue.Js and Laravel",
-          technologies: "HTML, CSS, JavaScript, Vue.js, Laravel, TailwindCSS",
-          gitHubLink: "https://github.com/yukiriu/yukolors",
-          image: "/img/Yukolors.93e06577.svg"
-
+          technologies: "HTML, CSS, TailwindCSS, Vue.js, JavaScript, Laravel",
+          gitHubLink: "https://github.com/yukiriu/yukolors"
         },
         {
           name: "Personal website",
           desc: "Personal website to showcase projects and skills",
-          technologies: "HTML, CSS, Vue.js, JavaScript",
+          technologies: "HTML, CSS, TailwindCSS Vue.js, JavaScript",
           gitHubLink: "https://github.com/yukiriu/portfoliowebsite-gjalbert",
-          image: "/img/portfoliowebsite-gjalbert.b108079f.svg"
+          hostedLink: "/img/portfoliowebsite-gjalbert.b108079f.svg",
+        },
+        {
+          name: "Decked Out website",
+          desc:
+            "Website to showcase Decked Out, a videogame we made as a team for our final year project",
+          technologies: "HTML, CSS, TailwindCSS, JavaScript",
+          gitHubLink: "https://github.com/yukiriu/deckedout-website",
+          hostedLink: "https://flamboyant-poitras-1dab3b.netlify.app/",
         }
       ],
     };

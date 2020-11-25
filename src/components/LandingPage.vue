@@ -1,14 +1,14 @@
 <template>
   <div
-    class="h-screen bg-gradient-to-b from-green-600 to-green-800 text-orange-100 workSans font-semibold text-6xl flex flex-col text-center items-center"
+    class="page h-screen bg-gradient-to-b from-green-600 to-green-800 text-orange-100 workSans font-semibold text-6xl flex flex-col text-center items-center"
   >
     <div class="w-auto m-auto animate-fadeIn">
       <div class="-mb-3">GABRIEL</div>
       <div class="bg-orange-100 h-1"></div>
       <div class="-mt-3">JALBERT</div>
-      <div class="text-sm workSans font-light">COMPUTER SCIENCE STUDENT</div>
+      <div class="text-sm workSans font-light">ÉTUDIANT EN INFORMATIQUE</div>
     </div>
-    <div class="h-10 w-10 mb-10" onclick="scrollDownToPage('aboutMePage')">
+    <div class="h-10 w-10 mb-10" v-on:click="scrollToPage('aboutMePage')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -28,9 +28,13 @@
 </template>
 
 <script>
-    export default {
+export default {
   name: "LandingPage",
-  components: {
+  components: {},
+  methods: {
+    scrollToPage(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    },
   },
 };
 </script>
