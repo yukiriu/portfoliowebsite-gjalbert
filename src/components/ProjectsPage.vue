@@ -3,7 +3,7 @@
     id="projectsPage"
     class="page  min-h-screen h-auto bg-gradient-to-r from-green-600 to-green-800 flex flex-col justify-center items-center"
   >
-  <div class="text-8xl text-white workSans font-bold text-opacity-75">
+  <div class="text-6xl mt-6 sm:mt-0 sm:text-8xl text-white workSans font-bold text-opacity-75">
     PROJETS
   </div>
     <div class="flex flex-row justify-evenly items-center w-4/5 h-auto flex-wrap m-10">
